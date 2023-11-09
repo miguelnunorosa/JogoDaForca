@@ -49,6 +49,9 @@ public class GameController {
             System.out.println("Adivinha correta!");
         } else {
             System.out.println("Adivinha incorreta. Tente novamente!");
+        }
+
+        if(acertou == false){
             tentativasRestantes--;
         }
     }
