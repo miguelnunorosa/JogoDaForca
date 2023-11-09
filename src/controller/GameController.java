@@ -21,7 +21,7 @@ public class GameController {
     public void iniciarJogo() {
         tentativasRestantes = 6;
 
-        while (!jogo.jogoCompleto()) {
+        while (!jogo.jogoCompleto() || tentativasRestantes == 0) {
             exibirStatusDoJogo();
             solicitarPalpite();
 
